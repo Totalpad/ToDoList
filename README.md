@@ -2,6 +2,9 @@
 
 A simple and elegant ToDo List application built using React, leveraging hooks like useState and useEffect, and enhanced with Material UI library for a sleek user interface.
 
+![Screenshot 1](./images/img1.png)
+img1.png
+
 ## Features
 
 - Add new tasks to your ToDo list
