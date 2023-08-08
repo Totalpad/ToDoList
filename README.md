@@ -20,9 +20,3 @@ img1.png
 - Styled Components: A CSS-in-JS library for dynamic styling.
 - Local Storage: Store tasks locally to ensure persistence between sessions.
 
-## Usage
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/your-username/todo-app.git
