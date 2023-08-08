@@ -1,1 +1,25 @@
-Introducing a minimalist ToDo application powered by React hooks such as useState and useEffect. This elegantly designed ToDo List allows you to effortlessly manage tasks with a touch of modernity. The app features a user-friendly interface crafted with the Material UI library, enhancing both aesthetics and usability. Experience the convenience of adding, editing, and marking tasks as completed, all in a seamlessly organized environment. Discover a stylish solution to staying productive and organized with this intuitive ToDo List app.
+# Minimalist ToDo App
+
+A simple and elegant ToDo List application built using React, leveraging hooks like useState and useEffect, and enhanced with Material UI library for a sleek user interface.
+
+## Features
+
+- Add new tasks to your ToDo list
+- Edit task titles directly for quick updates
+- Mark tasks as completed or active with ease
+- Filter tasks by All, Completed, or Active
+- Toggle between light and dark themes for personal preference
+
+## Technologies Used
+
+- React: A JavaScript library for building user interfaces.
+- Material UI: A popular React UI framework for creating beautiful and responsive designs.
+- Styled Components: A CSS-in-JS library for dynamic styling.
+- Local Storage: Store tasks locally to ensure persistence between sessions.
+
+## Usage
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/todo-app.git
