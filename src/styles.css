@@ -1,0 +1,208 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0; /* Reset margin to ensure the body stretches to full height */
+}
+
+/* App container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 1vh auto;
+} 
+
+
+
+.themeBtn{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  
+  
+}
+
+
+.app-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Form */
+.todo-form {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  flex-grow: 1;
+}
+
+.add-button {
+  flex-shrink: 0;
+}
+
+/* Todo List */
+.todo-list {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 0.5s ease-out;
+}
+
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+.todo-label {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+
+.todo-title {
+  flex-grow: 1;
+  margin-left: 1rem;
+  cursor: pointer;
+  word-break: break-word;
+  transition: color 0.2s;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.todo-title:hover {
+  color: #555;
+}
+
+.delete-button {
+  background-color: transparent;
+  border: none;
+  color: #ff4646;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+.delete-button:hover {
+  color: #d32f2f;
+}
+
+/* Navigation buttons */
+.nav-buttons-container {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.allbtn,
+.completedbtn,
+.activebtn {
+  background-color: transparent;
+  border: 1px solid #888;
+  border-radius: 5px;
+  color: #888;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.allbtn:hover,
+.completedbtn:hover,
+.activebtn:hover {
+  background-color: #f0f0f0;
+  color: #555;
+}
+
+/* Footer */
+.app-footer {
+  text-align: center;
+  padding: 1rem;
+  color: #888;
+  /* background-color: #f9f9f9; */
+  /* border-top: 1px solid #ddd; */
+  width: 100%;
+  margin-top: 60vh;
+}
+.app-footer a{
+  text-decoration: none;
+  color: #888;
+  transition: color 0.3s;  
+}
+.app-footer a:hover {
+  color: #555;
+  
+  
+}
+
+
+
+
+.footer-links {
+  margin-top: 1rem;
+}
+
+.footer-links a {
+  color: #888;
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #555;
+}
+
+/* Media Queries */
+@media (max-width: 500px) {
+  .app-container {
+    width: 90%;
+    padding: 1rem;
+  }
+}
